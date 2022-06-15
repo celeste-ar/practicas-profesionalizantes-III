@@ -1,3 +1,6 @@
+//Va bien esto.
+//Buen uso del CSS
+
 let result;
 let displayOperator = 0;
 
