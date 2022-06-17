@@ -5,6 +5,7 @@ window.addEventListener("load", ()=>
 	
 	let display = document.createElement("input");
 	display.classList.add("display");
+	display.disabled = "true";
 	
 	let btn7 = document.createElement("button");
 	btn7.innerText = "7";
@@ -21,7 +22,7 @@ window.addEventListener("load", ()=>
 	let btnAdd = document.createElement("button");
 	btnAdd.innerText = "+";
 	btnAdd.classList.add("button","operatorbutton","fontbutton");
-	
+
 	let btn4 = document.createElement("button");
 	btn4.innerText = "4";
 	btn4.classList.add("button","numberbutton","fontbutton");
@@ -73,42 +74,31 @@ window.addEventListener("load", ()=>
 	let btnErase = document.createElement("button");
 	btnErase.innerText = "Borrar";
 	btnErase.classList.add("button","erasebutton","fontbutton");
-	
-	let br = document.createElement("br");
-	let br1 = document.createElement("br");
-	let br2 = document.createElement("br");
-	let br3 = document.createElement("br");
-	let br4 = document.createElement("br");
-	
 
 	document.body.appendChild(calculator);
-	calculator.appendChild(display);
-	calculator.appendChild(br);
-	calculator.appendChild(btn7);
-	calculator.appendChild(btn8);
-	calculator.appendChild(btn9);
-	calculator.appendChild(btnAdd);
-	calculator.appendChild(br1);
-	calculator.appendChild(btn4);
-	calculator.appendChild(btn5);
-	calculator.appendChild(btn6);
-	calculator.appendChild(btnSubstract);
-	calculator.appendChild(br2);
-	calculator.appendChild(btn1);
-	calculator.appendChild(btn2);
-	calculator.appendChild(btn3);
-	calculator.appendChild(btnMultiply);
-	calculator.appendChild(br3);
-	calculator.appendChild(btn0);
-	calculator.appendChild(btnDecimal);
-	calculator.appendChild(btnEqual);
-	calculator.appendChild(btnDivide);
-	calculator.appendChild(br4);
-	calculator.appendChild(btnErase);
-	
-  
-
-	
-	
-	
+		
+		calculator.appendChild(display);
+		//br
+		calculator.appendChild(btn7);
+		calculator.appendChild(btn8);
+		calculator.appendChild(btn9);
+		calculator.appendChild(btnAdd);
+		//br
+		calculator.appendChild(btn4);
+		calculator.appendChild(btn5);
+		calculator.appendChild(btn6);
+		calculator.appendChild(btnSubstract);
+		//br
+		calculator.appendChild(btn1);
+		calculator.appendChild(btn2);
+		calculator.appendChild(btn3);
+		calculator.appendChild(btnMultiply);
+		//br
+		calculator.appendChild(btn0);
+		calculator.appendChild(btnDecimal);
+		calculator.appendChild(btnEqual);
+		calculator.appendChild(btnDivide);
+		//br
+		calculator.appendChild(btnErase);
+		
 })
