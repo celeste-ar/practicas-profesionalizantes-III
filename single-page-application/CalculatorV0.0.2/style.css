@@ -1,6 +1,6 @@
 .calculator{
 	width:338px;
-	height:500px;
+	height:520px;
 	background-color:#dcdbdb;
 	border-radius:10px;
 	border-right: 5px outset #dcdbdb;
@@ -20,7 +20,6 @@
 	background-color: #ffffff;
 	font-size: 40px;
 	color:#303A5A;
-	
 }
 
 .button{
@@ -32,7 +31,7 @@
 }
 
 .fontbutton{
-	color:white;
+	color:#FFFF;
 	font-size:25px;
 	font-style:bold;
 	font-family: Arial, Helvetica, sans-serif;
@@ -43,14 +42,26 @@
 	border-color:#3a8ca5;
 }
 
+.numberbutton:hover{
+	background-color:#41a2bf;
+}
+
 .operatorbutton{
 	background-color:#3aa558;
 	border-color:#3aa558;
 }
 
+.operatorbutton:hover{
+	background-color:#37bd5c;
+}
+
 .equalbutton{
 	background-color:#f0a523;
 	border-color:#f0a523;
+}
+
+.equalbutton:hover{
+	background-color:#fcb53a;
 }
 
 .erasebutton{
@@ -61,4 +72,8 @@
 	border-bottom-width:5px;
 	border-color:#ea3a3a;
 	margin:10px;	
+}
+
+.erasebutton:hover{
+	background-color:#fc3535;
 }
