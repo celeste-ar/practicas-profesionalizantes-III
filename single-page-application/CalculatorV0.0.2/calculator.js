@@ -1,5 +1,6 @@
 window.addEventListener("load", ()=>
 {
+	//elementos
 	let calculator = document.createElement("div");
 	calculator.classList.add("calculator");
 	
@@ -100,5 +101,136 @@ window.addEventListener("load", ()=>
 		calculator.appendChild(btnDivide);
 		//br
 		calculator.appendChild(btnErase);
+		//fin elementos
 		
+		//funcionalidad de la calculadora
+		let result;
+		let displayOperator = 0;
+
+		function clickBtn9()
+		{	
+			display.value +="9"; 
+		}
+
+		function clickBtn8()
+		{
+			display.value +="8"
+		}
+
+		function clickBtn7()
+		{
+			display.value +="7"
+		}
+
+		function clickBtn6()
+		{
+			display.value +="6"
+		}
+
+		function clickBtn5()
+		{
+			display.value +="5"
+		}
+
+		function clickBtn4()
+		{
+			display.value +="4"
+		}
+
+		function clickBtn3()
+		{
+			display.value +="3"
+		}
+
+		function clickBtn2()
+		{
+			display.value +="2"
+		}
+
+		function clickBtn1()
+		{
+			display.value +="1"
+		}
+
+		function clickBtn0()
+		{
+			display.value +="0"	
+		}
+
+		function clickBtnAdd()
+		{
+			if(displayOperator == 0)
+			{
+				display.value += "+";
+			}
+			displayOperator = 1;
+		}	
+
+		function clickBtnSubstract()
+		{
+			if(displayOperator == 0)
+			{
+				display.value += "-";
+			}
+			displayOperator = 1;
+		}	
+
+		function clickBtnMultiply()
+		{
+			if(displayOperator == 0)
+			{
+				display.value += "*";
+			}
+			displayOperator = 1;
+		}	
+
+		function clickBtnDivide()
+		{
+			if(displayOperator == 0)
+			{
+				display.value += "/";
+			}
+			displayOperator = 1;
+		}	
+
+		function clickBtnDecimalPoint()
+		{
+			if(displayOperator == 0)
+			{
+				display.value += ".";
+			}
+			displayOperator = 1;
+		}	
+
+		function clickBtnEqual()
+		{
+			result = display.value;
+			display.value = eval(result); 
+			displayOperator = 0;
+		}
+
+		function clickBtnErase()
+		{
+			display.value = "";
+			result = 0;
+			displayOperator = 0;
+		}
+			//manejadores de eventos
+			btn9.addEventListener("click", clickBtn9);
+			btn8.addEventListener("click", clickBtn8);
+			btn7.addEventListener("click", clickBtn7);
+			btn6.addEventListener("click", clickBtn6);
+			btn5.addEventListener("click", clickBtn5);
+			btn4.addEventListener("click", clickBtn4);
+			btn3.addEventListener("click", clickBtn3);
+			btn2.addEventListener("click", clickBtn2);
+			btn1.addEventListener("click", clickBtn1);
+			btn0.addEventListener("click", clickBtn0);
+			btnAdd.addEventListener("click", clickBtnAdd);
+			btnSubstract.addEventListener("click", clickBtnSubstract);
+			btnMultiply.addEventListener("click", clickBtnMultiply);
+			btnDivide.addEventListener("click", clickBtnDivide);
+			btnDecimal.addEventListener("click", clickBtnDecimalPoint);
+			btnEqual.addEventListener("click", clickBtnEqual);
+			btnErase.addEventListener("click", clickBtnErase);				
 })
