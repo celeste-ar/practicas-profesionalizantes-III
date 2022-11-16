@@ -1,0 +1,14 @@
+.navBar{
+	z-index:3;
+	width:300px;
+	font-weight:bold;
+}
+
+.closeNavBar{
+	width:100%;
+	font-size:22px; 
+}
+
+.text{
+	color:white;
+}
